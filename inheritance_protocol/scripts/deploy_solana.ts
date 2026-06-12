@@ -1,0 +1,1 @@
+console.log("Usa: anchor deploy para el programa Solana");

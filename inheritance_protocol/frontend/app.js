@@ -1,0 +1,5 @@
+let currentChain=null,contractAddress=null;
+document.getElementById("connectMetaMask").onclick=async()=>{if(window.ethereum){await ethereum.request({method:"eth_requestAccounts"});currentChain="ethereum";document.getElementById("status").innerText="Conectado a Ethereum";document.querySelector(".actions").style.display="block"}else alert("Instala MetaMask")};
+document.getElementById("connectPhantom").onclick=async()=>{if(window.solana?.isPhantom){await window.solana.connect();currentChain="solana";document.getElementById("status").innerText="Conectado a Solana";document.querySelector(".actions").style.display="block"}else alert("Instala Phantom")};
+document.getElementById("createContract").onclick=()=>alert("Demo: desplegar contrato (requiere backend)");
+document.getElementById("sendHeartbeat").onclick=async()=>{await fetch('/heartbeat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chain:currentChain,contractAddress,ownerAddress:"0x..."})});alert("Heartbeat enviado")};
