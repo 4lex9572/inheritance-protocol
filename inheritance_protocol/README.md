@@ -14,7 +14,7 @@ This code is released under **AGPL-3.0**.
 
 For commercial use (closed-source, SaaS, or proprietary integration), you must purchase a commercial license.
 
-👉 **[Buy Commercial License - $299 USD](https://tu-enlace.gumroad.com)**
+👉 **[Buy Commercial License - $299 USD](https://basurtogarcia.gumroad.com/l/inheritance-protocol)**
 
 ## Features
 
